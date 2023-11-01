@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Details</title>
+    <link rel="stylesheet" href="Student.css">
+</head>
+<body>
+    <div class="main">
+        <div class="bg">
+        <form action="" autocomplete="off" >
+           <div class="form">
+            <h2 align="center">Register a User</h2>
+
+                <div class="nm" >
+                     <label for="Name">Name:-</label>
+                     <input type="text" id="userName">
+                </div> 
+                <div class="em">
+                    <label for="Email">Email:-</label>
+                    <input type="email" id="email">
+                </div>   
+                <div class="phno">
+                    <label for="Phno">PhoneNo:-</label>
+                    <input type="text" required maxlength="10" pattern="[6-9]{1}[0-9]{9}" id="phone">
+                </div>
+                <div class="city">
+                    <label for="City">City:-</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="btn">
+                    <input id="sbt" type="button" value="SUBMIT" onclick="enterData()">
+                    <input id="rst" type="reset" value="RESET">
+                </div>
+         </form>
+        </div>
+    </div>
+        <div class="divTable">
+            <table cellspacing="0px" cellpadding="5px" id="studentList" class="entrdata">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>PhoneNo</th>
+                        <th>City</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="Student.js"></script>
+</body>
+</html>
