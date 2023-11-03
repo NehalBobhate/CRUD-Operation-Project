@@ -77,6 +77,8 @@ h2{
     border-left: 3px solid black; 
     border-right: 3px solid black;
     border-radius: 10px;
+    
+
 }
 #sbt
 {
@@ -98,5 +100,15 @@ h2{
     padding-left: 0px;
     margin-left: 20px;
     border: 2px solid brown;
+
+}
+#sbt:hover{
+    transition: transform 2s;
+    transform: scale(1.4);
+}
+#rst:hover{
+    transition: transform 2s;
+    transform: scale(1.4);
+    
 
 }
